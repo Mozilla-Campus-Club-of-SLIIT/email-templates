@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate of Participation</title>
+    <style>
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            outline: none;
+            text-decoration: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 620px) {
+            table[class="container"] {
+                width: 95% !important;
+            }
+
+            td[class="body-padding"] {
+                padding: 15px !important;
+            }
+
+            h1 {
+                font-size: 20px !important;
+            }
+
+            a[class="button"] {
+                width: 100% !important;
+                padding: 12px 0 !important;
+                font-size: 16px !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f8f8f8; font-family: Arial, Helvetica, sans-serif;">
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f8f8f8">
+        <tr>
+            <td align="center" style="padding: 30px 15px;">
+                <table class="container" width="600" border="0" cellspacing="0" cellpadding="0"
+                    style="background-color:#ffffff; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+
+                    <!-- Header -->
+                    <tr>
+                        <td align="center" bgcolor="#ff6600" style="padding: 20px; border-radius:8px 8px 0 0;">
+                            <h1 style="margin:0; color:#ffffff; font-size:24px; font-weight:bold;">Certificate of
+                                Participation</h1>
+                        </td>
+                    </tr>
+
+                    <!-- Body -->
+                    <tr>
+                        <td class="body-padding" style="padding: 30px; color:#333333; font-size:16px; line-height:1.6;">
+                            <p>Dear {{ firstname }}, </p>
+
+
+                            <p>
+                                We are delighted to share your <strong>Certificate of Participation</strong> for
+                                <strong>HolaMozilla 2025</strong> event.
+                                Please click the button below to view your certificate.
+                            </p>
+
+                            <!-- Button -->
+                            <p style="text-align:center; margin:30px 0;">
+                                <a href="{{ credurl }}" class="button"
+                                    style="background-color:#ff6600; color:#ffffff; text-decoration:none; padding:12px 25px; border-radius:5px; font-size:16px; display:inline-block;">
+                                    View Certificate
+                                </a>
+                            </p>
+
+                            <!-- Credential Info -->
+                            <p style="font-size:14px; color:#555;">
+                                <strong>Credential ID:</strong> {{ credid }}<br>
+                                <strong>Credential URL:</strong> <a href="{{ credurl }}" style="color:#ff6600;">{{
+                                    credurl }}</a>
+                            </p>
+
+                            Please feel free to share your achievement on LinkedIn.
+
+                            <p> We truly appreciate your participation and the valuable time you dedicated to making the
+                                event a success. </p>
+                            Thank you.
+
+                            <p>Best regards,<br>
+                                Sadeesha Perera<br>
+                                President - Mozilla Campus Club of SLIIT</p>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td align="center" bgcolor="#f2f2f2"
+                            style="padding: 15px; border-radius:0 0 8px 8px; font-size:12px; color:#777777;">
+                            <p style="margin:0;">&copy; 2025 Mozilla Campus Club of SLIIT. All rights reserved.</p>
+                            <p style="margin:5px 0 0 0;">
+                                <a href="{{ unsubscribe_link }}"
+                                    style="color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 12px; text-decoration: underline;">
+                                    Unsubscribe
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+
+</html>
